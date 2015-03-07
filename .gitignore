@@ -16,3 +16,7 @@ autom4te.cache
 *.sublime-workspace
 npp.tle
 iss.tle
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
