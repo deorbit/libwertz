@@ -1,9 +1,9 @@
 AC_PREREQ([2.61])
-AC_INIT([sgp4], 1.0, [info@danrw.com])
+AC_INIT([libwertz], 1.0, [info@anh.io])
 AM_INIT_AUTOMAKE
 AM_SILENT_RULES([yes])
 
-AC_CONFIG_SRCDIR([libsgp4/Tle.cpp])
+AC_CONFIG_SRCDIR([libwertz/Tle.cpp])
 
 CFLAGS=" $CFLAGS"
 CXXFLAGS=" $CXXFLAGS"
@@ -33,7 +33,7 @@ AC_SEARCH_LIBS([clock_gettime],
 AC_SUBST(AM_CXXFLAGS)
 
 AC_CONFIG_FILES([Makefile
-                 libsgp4/Makefile
+                 libwertz/Makefile
                  passpredict/Makefile
                  runtest/Makefile
                  sattrack/Makefile

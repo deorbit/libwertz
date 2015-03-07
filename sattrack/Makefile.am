@@ -1,4 +1,4 @@
 bin_PROGRAMS = sattrack
 sattrack_SOURCES = sattrack.cpp
-sattrack_LDADD = ../libsgp4/libsgp4.a
-INCLUDES = -I../libsgp4
+sattrack_LDADD = ../libwertz/libwertz.a
+INCLUDES = -I../libwertz

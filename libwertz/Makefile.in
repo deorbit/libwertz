@@ -77,7 +77,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-subdir = libsgp4
+subdir = libwertz
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
 	$(top_srcdir)/depcomp $(include_HEADERS)
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -122,14 +122,14 @@ AM_V_AR = $(am__v_AR_@AM_V@)
 am__v_AR_ = $(am__v_AR_@AM_DEFAULT_V@)
 am__v_AR_0 = @echo "  AR      " $@;
 am__v_AR_1 = 
-libsgp4_a_AR = $(AR) $(ARFLAGS)
-libsgp4_a_LIBADD =
-am_libsgp4_a_OBJECTS = CoordGeodetic.$(OBJEXT) \
+libwertz_a_AR = $(AR) $(ARFLAGS)
+libwertz_a_LIBADD =
+am_libwertz_a_OBJECTS = CoordGeodetic.$(OBJEXT) \
 	CoordTopocentric.$(OBJEXT) DateTime.$(OBJEXT) Eci.$(OBJEXT) \
 	Globals.$(OBJEXT) Observer.$(OBJEXT) OrbitalElements.$(OBJEXT) \
 	SGP4.$(OBJEXT) SolarPosition.$(OBJEXT) TimeSpan.$(OBJEXT) \
 	Tle.$(OBJEXT) Util.$(OBJEXT) Vector.$(OBJEXT)
-libsgp4_a_OBJECTS = $(am_libsgp4_a_OBJECTS)
+libwertz_a_OBJECTS = $(am_libwertz_a_OBJECTS)
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -159,8 +159,8 @@ AM_V_CXXLD = $(am__v_CXXLD_@AM_V@)
 am__v_CXXLD_ = $(am__v_CXXLD_@AM_DEFAULT_V@)
 am__v_CXXLD_0 = @echo "  CXXLD   " $@;
 am__v_CXXLD_1 = 
-SOURCES = $(libsgp4_a_SOURCES)
-DIST_SOURCES = $(libsgp4_a_SOURCES)
+SOURCES = $(libwertz_a_SOURCES)
+DIST_SOURCES = $(libwertz_a_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -277,8 +277,8 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-lib_LIBRARIES = libsgp4.a
-libsgp4_a_SOURCES = \
+lib_LIBRARIES = libwertz.a
+libwertz_a_SOURCES = \
 	CoordGeodetic.cpp    \
 	CoordTopocentric.cpp \
 	DateTime.cpp         \
@@ -324,9 +324,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu libsgp4/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu libwertz/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu libsgp4/Makefile
+	  $(AUTOMAKE) --gnu libwertz/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -377,10 +377,10 @@ uninstall-libLIBRARIES:
 clean-libLIBRARIES:
 	-test -z "$(lib_LIBRARIES)" || rm -f $(lib_LIBRARIES)
 
-libsgp4.a: $(libsgp4_a_OBJECTS) $(libsgp4_a_DEPENDENCIES) $(EXTRA_libsgp4_a_DEPENDENCIES) 
-	$(AM_V_at)-rm -f libsgp4.a
-	$(AM_V_AR)$(libsgp4_a_AR) libsgp4.a $(libsgp4_a_OBJECTS) $(libsgp4_a_LIBADD)
-	$(AM_V_at)$(RANLIB) libsgp4.a
+libwertz.a: $(libwertz_a_OBJECTS) $(libwertz_a_DEPENDENCIES) $(EXTRA_libwertz_a_DEPENDENCIES) 
+	$(AM_V_at)-rm -f libwertz.a
+	$(AM_V_AR)$(libwertz_a_AR) libwertz.a $(libwertz_a_OBJECTS) $(libwertz_a_LIBADD)
+	$(AM_V_at)$(RANLIB) libwertz.a
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)

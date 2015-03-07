@@ -1,4 +1,4 @@
-libsgp4/*.o
+libwertz/*.o
 .deps
 config.*
 Makefile
@@ -10,7 +10,7 @@ passpredict/passpredict
 passpredict/passpredict.o
 groundtrack/groundtrack
 groundtrack/groundtrack.o
-libsgp4/libsgp4.a
+libwertz/libwertz.a
 autom4te.cache
 *.sublime-project
 *.sublime-workspace

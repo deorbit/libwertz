@@ -91,7 +91,7 @@ am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
 am_sattrack_OBJECTS = sattrack.$(OBJEXT)
 sattrack_OBJECTS = $(am_sattrack_OBJECTS)
-sattrack_DEPENDENCIES = ../libsgp4/libsgp4.a
+sattrack_DEPENDENCIES = ../libwertz/libwertz.a
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -239,8 +239,8 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 sattrack_SOURCES = sattrack.cpp
-sattrack_LDADD = ../libsgp4/libsgp4.a
-INCLUDES = -I../libsgp4
+sattrack_LDADD = ../libwertz/libwertz.a
+INCLUDES = -I../libwertz
 all: all-am
 
 .SUFFIXES:

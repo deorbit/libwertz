@@ -91,7 +91,7 @@ am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
 am_runtest_OBJECTS = runtest.$(OBJEXT)
 runtest_OBJECTS = $(am_runtest_OBJECTS)
-runtest_DEPENDENCIES = ../libsgp4/libsgp4.a
+runtest_DEPENDENCIES = ../libwertz/libwertz.a
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -239,8 +239,8 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 runtest_SOURCES = runtest.cpp
-runtest_LDADD = ../libsgp4/libsgp4.a
-INCLUDES = -I../libsgp4
+runtest_LDADD = ../libwertz/libwertz.a
+INCLUDES = -I../libwertz
 all: all-am
 
 .SUFFIXES:

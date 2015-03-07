@@ -1,1 +1,1 @@
-SUBDIRS = libsgp4 sattrack runtest passpredict groundtrack
+SUBDIRS = libwertz sattrack runtest passpredict groundtrack

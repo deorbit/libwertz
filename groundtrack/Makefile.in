@@ -91,7 +91,7 @@ am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
 am_groundtrack_OBJECTS = groundtrack.$(OBJEXT)
 groundtrack_OBJECTS = $(am_groundtrack_OBJECTS)
-groundtrack_DEPENDENCIES = ../libsgp4/libsgp4.a
+groundtrack_DEPENDENCIES = ../libwertz/libwertz.a
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -239,8 +239,8 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 groundtrack_SOURCES = groundtrack.cpp
-groundtrack_LDADD = ../libsgp4/libsgp4.a
-INCLUDES = -I../libsgp4
+groundtrack_LDADD = ../libwertz/libwertz.a
+INCLUDES = -I../libwertz
 all: all-am
 
 .SUFFIXES:

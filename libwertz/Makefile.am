@@ -1,5 +1,5 @@
-lib_LIBRARIES = libsgp4.a
-libsgp4_a_SOURCES = \
+lib_LIBRARIES = libwertz.a
+libwertz_a_SOURCES = \
 	CoordGeodetic.cpp    \
 	CoordTopocentric.cpp \
 	DateTime.cpp         \

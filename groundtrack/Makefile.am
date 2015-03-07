@@ -1,4 +1,4 @@
 bin_PROGRAMS = groundtrack
 groundtrack_SOURCES = groundtrack.cpp
-groundtrack_LDADD = ../libsgp4/libsgp4.a
-INCLUDES = -I../libsgp4
+groundtrack_LDADD = ../libwertz/libwertz.a
+INCLUDES = -I../libwertz
